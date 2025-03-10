@@ -1,5 +1,7 @@
 package br.com.luna.entities;
 
+import java.util.Objects;
+
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
@@ -33,6 +35,23 @@ public class OrderItemPK {
 	public void setProduct(Product product) {
 		this.product = product;
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		OrderItemPK other = (OrderItemPK) obj;
+		return Objects.equals(order, other.order) && Objects.equals(product, other.product);
+	}
 	
-	
+	 @Override
+	    public int hashCode() {
+	        int result = Objects.hashCode(order);
+	        result = 31 * result + Objects.hashCode(product);
+	        return result;
+	    }
 }
