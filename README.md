@@ -71,3 +71,4 @@ Contribuições são bem-vindas! Para contribuir:
 ## Licença
 
 Este projeto é distribuído sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/glluna/Projeto-Vendas/blob/main/LICENSE) 
