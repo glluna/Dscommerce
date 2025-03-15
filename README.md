@@ -33,3 +33,41 @@ O **Dscommerce** é um sistema de e-commerce que permite o gerenciamento de usu�
 - **Gerenciamento de Dependências**: Maven
 - **Banco de Dados**: PostgreSQL (ou outro banco relacional)
 
+## API REST
+
+A aplicação disponibiliza uma API REST para integração. Alguns dos endpoints disponíveis são:
+
+- **Usuários**
+  - `GET /users` - Lista todos os usuários
+  - `GET /users/{id}` - Retorna um usuário específico
+  - `POST /users` - Cria um novo usuário
+  - `PUT /users/{id}` - Atualiza um usuário
+  - `DELETE /users/{id}` - Remove um usuário
+
+- **Produtos**
+  - `GET /products` - Lista todos os produtos
+  - `GET /products/{id}` - Retorna um produto específico
+  - `POST /products` - Cria um novo produto
+  - `PUT /products/{id}` - Atualiza um produto
+  - `DELETE /products/{id}` - Remove um produto
+
+- **Pedidos**
+  - `GET /orders` - Lista todos os pedidos
+  - `GET /orders/{id}` - Retorna detalhes de um pedido
+  - `POST /orders` - Cria um novo pedido
+  - `PUT /orders/{id}` - Atualiza um pedido
+  - `DELETE /orders/{id}` - Cancela um pedido
+
+## Contribuição
+
+Contribuições são bem-vindas! Para contribuir:
+
+1. Fork este repositório.
+2. Crie uma branch com sua feature (`git checkout -b minha-feature`).
+3. Commit suas mudanças (`git commit -m 'Minha nova feature'`).
+4. Envie para o repositório remoto (`git push origin minha-feature`).
+5. Abra um Pull Request.
+
+## Licença
+
+Este projeto é distribuído sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
