@@ -3,6 +3,7 @@ package br.com.luna.controller;
 
 
 import java.net.URI;
+import java.time.Instant;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -18,8 +19,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import br.com.luna.dto.CustomError;
 import br.com.luna.dto.ProductDTO;
 import br.com.luna.services.ProductService;
+import br.com.luna.services.exceptions.ResourceNotFoundException;
 
 @RestController
 @RequestMapping(value = "/products")
@@ -32,7 +35,8 @@ public class ProductController {
 	public ResponseEntity<ProductDTO> findById(@PathVariable Long id) {
 		ProductDTO dto = service.findById(id);
 		return ResponseEntity.ok(dto);   
-	}
+		
+}
 	
 	@GetMapping
 	public ResponseEntity<Page<ProductDTO>> findAll(Pageable pageable) {
