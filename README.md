@@ -32,4 +32,4 @@ O **Dscommerce** é um sistema de e-commerce que permite o gerenciamento de usu�
 - **API**: RESTful com Spring Boot
 - **Gerenciamento de Dependências**: Maven
 - **Banco de Dados**: PostgreSQL (ou outro banco relacional)
-- **Frontend**: (se aplicável, especifique a tecnologia usada)
+
